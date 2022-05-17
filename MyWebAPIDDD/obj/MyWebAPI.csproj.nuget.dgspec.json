@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\DotNet\\MyWebAPIDDD\\MyWebAPI.csproj": {}
+    "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\DotNet\\MyWebAPIDDD\\MyWebAPI.csproj": {
+    "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\DotNet\\MyWebAPIDDD\\MyWebAPI.csproj",
+        "projectUniqueName": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj",
         "projectName": "MyWebAPI",
-        "projectPath": "C:\\Dev\\DotNet\\MyWebAPIDDD\\MyWebAPI.csproj",
+        "projectPath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj",
         "packagesPath": "C:\\Users\\iannl\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\DotNet\\MyWebAPIDDD\\obj\\",
+        "outputPath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
