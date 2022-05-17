@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MyWebAPI.Entities;
+using MyWebAPI.Domain.Entities;
 
-namespace MyWebAPI.Data
+namespace MyWebAPI.Infra.Data
 {
     public class WebApiContext : DbContext
     {

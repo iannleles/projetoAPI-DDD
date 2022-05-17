@@ -1,4 +1,4 @@
-﻿namespace MyWebAPI.Entities
+﻿namespace MyWebAPI.Domain.Entities
 {
     public class Produto
     {

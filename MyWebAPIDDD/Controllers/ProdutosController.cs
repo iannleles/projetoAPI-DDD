@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyWebAPI.Data;
+using MyWebAPI.DTO;
 using MyWebAPI.Entities;
 
 namespace MentoriaAbril.Controllers
@@ -21,32 +22,45 @@ namespace MentoriaAbril.Controllers
         public IActionResult GetAll()
         {
             var produtos = _context.Produtos.ToList();
+            var produtosDTO = produtos.Select(c => new ProdutoDTO { 
+            
+            Id= c.Id,
+            Marca = c.Marca,
+            Nome = c.Nome
+            
+            });
 
             return Ok(produtos);
         }
 
         [HttpPost]
-        public IActionResult Insert(Produto produto)
+        public IActionResult Insert(ProdutoDTO produtoDTO)
         {
+            var produto = new Produto { 
+            
+            Marca = produtoDTO.Marca,
+            Nome = produtoDTO.Nome,
+            };
             _context.Produtos.Add(produto);
             _context.SaveChanges();
-            return Ok(produto);
+            produtoDTO.Id = produto.Id;
+            return Ok(produtoDTO);
         }
 
         [HttpPut]
-        public IActionResult Update(Produto produto)
+        public IActionResult Update(ProdutoDTO produtoDTO)
         {
-           var  produtoAlterado = _context.Produtos.FirstOrDefault(x=>x.Id == produto.Id);
+           var  produtoAlterado = _context.Produtos.FirstOrDefault(x=>x.Id == produtoDTO.Id);
 
-            if(produto == null)
+            if(produtoAlterado == null)
                return NotFound();
 
-            produtoAlterado.Nome = produto.Nome;
-            produtoAlterado.Marca = produto.Marca;
+            produtoAlterado.Nome = produtoDTO.Nome;
+            produtoAlterado.Marca = produtoDTO.Marca;
             
             _context.Produtos.Update(produtoAlterado);
             _context.SaveChanges();
-            return Ok(produto);
+            return Ok(produtoDTO);
         }
 
 
@@ -71,6 +85,13 @@ namespace MentoriaAbril.Controllers
             var produto = _context.Produtos.Find(id);
             if (produto == null)
                 return NotFound();
+
+            var produtoDTO = new ProdutoDTO
+            {
+                Id = produto.Id,
+                Nome = produto.Nome,
+                Marca = produto.Marca,
+            };
 
             return Ok(produto);
         }
