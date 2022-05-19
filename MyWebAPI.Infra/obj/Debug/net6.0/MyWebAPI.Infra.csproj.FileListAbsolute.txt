@@ -1,0 +1,17 @@
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\bin\Debug\net6.0\MyWebAPI.Infra.deps.json
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\bin\Debug\net6.0\MyWebAPI.Infra.runtimeconfig.json
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\bin\Debug\net6.0\MyWebAPI.Infra.dll
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\bin\Debug\net6.0\MyWebAPI.Infra.pdb
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\bin\Debug\net6.0\MyWebAPI.Domain.dll
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\bin\Debug\net6.0\MyWebAPI.Domain.pdb
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.csproj.AssemblyReference.cache
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.AssemblyInfoInputs.cache
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.AssemblyInfo.cs
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.csproj.CoreCompileInputs.cache
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.csproj.CopyComplete
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.dll
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\refint\MyWebAPI.Infra.dll
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.pdb
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\MyWebAPI.Infra.genruntimeconfig.cache
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Infra\obj\Debug\net6.0\ref\MyWebAPI.Infra.dll

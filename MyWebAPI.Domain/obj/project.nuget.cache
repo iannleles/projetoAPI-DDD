@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V6mohQfmHA8HtuPAkubm+kIXWIRXPZfRk4Fj64K3aX2rTBB0F4wq52l0CvHRI2F9nevTqMszgvVNAuRxeyU+9w==",
+  "dgSpecHash": "t40cq73vCY8zA1rRE+GFXtC1NV+nLN6H+iDIHrbGVSl4dHcmqhXfO9g14yjLooXWPHKfxOYJDypUhLXaj/Vv/w==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPI.Domain\\MyWebAPI.Domain.csproj",
+  "projectFilePath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Domain\\MyWebAPI.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

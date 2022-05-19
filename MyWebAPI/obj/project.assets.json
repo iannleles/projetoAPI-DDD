@@ -702,6 +702,44 @@
             "rid": "win"
           }
         }
+      },
+      "MyWebAPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyWebAPI.Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyWebAPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyWebAPI.Application.dll": {}
+        }
+      },
+      "MyWebAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyWebAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyWebAPI.Domain.dll": {}
+        }
+      },
+      "MyWebAPI.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
+          "MyWebAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyWebAPI.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyWebAPI.Infra.dll": {}
+        }
       }
     }
   },
@@ -2046,6 +2084,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MyWebAPI.Application/1.0.0": {
+      "type": "project",
+      "path": "../MyWebAPI.Application/MyWebAPI.Application.csproj",
+      "msbuildProject": "../MyWebAPI.Application/MyWebAPI.Application.csproj"
+    },
+    "MyWebAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MyWebAPI.Domain/MyWebAPI.Domain.csproj",
+      "msbuildProject": "../MyWebAPI.Domain/MyWebAPI.Domain.csproj"
+    },
+    "MyWebAPI.Infra/1.0.0": {
+      "type": "project",
+      "path": "../MyWebAPI.Infra/MyWebAPI.Infra.csproj",
+      "msbuildProject": "../MyWebAPI.Infra/MyWebAPI.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2054,6 +2107,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
+      "MyWebAPI.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2065,11 +2119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj",
+      "projectUniqueName": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\MyWebAPI.csproj",
       "projectName": "MyWebAPI",
-      "projectPath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj",
+      "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\MyWebAPI.csproj",
       "packagesPath": "C:\\Users\\iannl\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\obj\\",
+      "outputPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -2090,7 +2144,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\MyWebAPI.Application.csproj": {
+              "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\MyWebAPI.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

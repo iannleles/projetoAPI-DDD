@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebAPI", "MyWebAPIDDD\MyWebAPI.csproj", "{7A4836F9-602E-460C-86F3-6029451E7E76}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - WebAPI", "0 - WebAPI", "{98B204AA-192A-4D37-931B-E82B25805416}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{1EE39DD1-5C49-4D98-81C4-1A257676041C}"
@@ -13,11 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infra", "2 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{4A440C55-2817-4552-B944-B68B12D0DA66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebAPI.Application", "MyWebAPI.Application\MyWebAPI.Application.csproj", "{47846B07-DAAB-484B-8CBD-7B5894CA8900}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebAPI.Application", "MyWebAPI.Application\MyWebAPI.Application.csproj", "{47846B07-DAAB-484B-8CBD-7B5894CA8900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebAPI.Infra", "MyWebAPI.Infra\MyWebAPI.Infra.csproj", "{DD5785A6-5299-43A7-888E-92D1691B5E1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebAPI.Infra", "MyWebAPI.Infra\MyWebAPI.Infra.csproj", "{DD5785A6-5299-43A7-888E-92D1691B5E1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebAPI.Domain", "MyWebAPI.Domain\MyWebAPI.Domain.csproj", "{05CC0300-B447-41B4-B699-14D5A749B70F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebAPI.Domain", "MyWebAPI.Domain\MyWebAPI.Domain.csproj", "{05CC0300-B447-41B4-B699-14D5A749B70F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebAPI", "MyWebAPI\MyWebAPI.csproj", "{9B993D31-C3CB-4B8D-A027-202BC2C3A058}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A4836F9-602E-460C-86F3-6029451E7E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A4836F9-602E-460C-86F3-6029451E7E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A4836F9-602E-460C-86F3-6029451E7E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A4836F9-602E-460C-86F3-6029451E7E76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{47846B07-DAAB-484B-8CBD-7B5894CA8900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47846B07-DAAB-484B-8CBD-7B5894CA8900}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47846B07-DAAB-484B-8CBD-7B5894CA8900}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,15 +37,19 @@ Global
 		{05CC0300-B447-41B4-B699-14D5A749B70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05CC0300-B447-41B4-B699-14D5A749B70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05CC0300-B447-41B4-B699-14D5A749B70F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B993D31-C3CB-4B8D-A027-202BC2C3A058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B993D31-C3CB-4B8D-A027-202BC2C3A058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B993D31-C3CB-4B8D-A027-202BC2C3A058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B993D31-C3CB-4B8D-A027-202BC2C3A058}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7A4836F9-602E-460C-86F3-6029451E7E76} = {98B204AA-192A-4D37-931B-E82B25805416}
 		{47846B07-DAAB-484B-8CBD-7B5894CA8900} = {1EE39DD1-5C49-4D98-81C4-1A257676041C}
 		{DD5785A6-5299-43A7-888E-92D1691B5E1B} = {56AC1097-316F-4CED-8EAB-E314D8431108}
 		{05CC0300-B447-41B4-B699-14D5A749B70F} = {4A440C55-2817-4552-B944-B68B12D0DA66}
+		{9B993D31-C3CB-4B8D-A027-202BC2C3A058} = {98B204AA-192A-4D37-931B-E82B25805416}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FE24DC27-173F-4E2F-96F7-E2B00716665E}

@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyWebAPI.Data;
-using MyWebAPI.DTO;
-using MyWebAPI.Entities;
+using MyWebAPI.Application.DTO;
+using MyWebAPI.Application.Interfaces;
 
 namespace MentoriaAbril.Controllers
 {
@@ -10,90 +9,65 @@ namespace MentoriaAbril.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase
     {
-        private readonly WebApiContext _context;
+        private readonly IProdutoAppService _produtoAppService;
 
-        public ProdutosController(WebApiContext context)
+        public ProdutosController(IProdutoAppService produtoAppService)
         {
-            _context = context;
+            _produtoAppService = produtoAppService;
         }
 
 
         [HttpGet]
         public IActionResult GetAll()
-        {
-            var produtos = _context.Produtos.ToList();
-            var produtosDTO = produtos.Select(c => new ProdutoDTO { 
-            
-            Id= c.Id,
-            Marca = c.Marca,
-            Nome = c.Nome
-            
-            });
-
-            return Ok(produtos);
+        {   
+            return Ok(_produtoAppService.GetAll());
         }
 
         [HttpPost]
         public IActionResult Insert(ProdutoDTO produtoDTO)
         {
-            var produto = new Produto { 
-            
-            Marca = produtoDTO.Marca,
-            Nome = produtoDTO.Nome,
-            };
-            _context.Produtos.Add(produto);
-            _context.SaveChanges();
-            produtoDTO.Id = produto.Id;
+            _produtoAppService.Insert(produtoDTO);
             return Ok(produtoDTO);
         }
 
-        [HttpPut]
-        public IActionResult Update(ProdutoDTO produtoDTO)
-        {
-           var  produtoAlterado = _context.Produtos.FirstOrDefault(x=>x.Id == produtoDTO.Id);
-
-            if(produtoAlterado == null)
-               return NotFound();
-
-            produtoAlterado.Nome = produtoDTO.Nome;
-            produtoAlterado.Marca = produtoDTO.Marca;
-            
-            _context.Produtos.Update(produtoAlterado);
-            _context.SaveChanges();
-            return Ok(produtoDTO);
-        }
+        //[HttpPut]
+        //public IActionResult Update(ProdutoDTO produtoDTO)
+        //{
+           
+        //    return Ok(produtoDTO);
+        //}
 
 
-        [HttpDelete]
+        //[HttpDelete]
 
-        public IActionResult Delete(int id)
-        {
-            var produto = _context.Produtos.Find(id);
-            if (produto == null)
-                return NotFound();
-            _context.Produtos.Remove(produto);
-            _context.SaveChanges();
-            return Ok("Produto" + id + " excluído com sucesso");
+        //public IActionResult Delete(int id)
+        //{
+        //    var produto = _context.Produtos.Find(id);
+        //    if (produto == null)
+        //        return NotFound();
+        //    _context.Produtos.Remove(produto);
+        //    _context.SaveChanges();
+        //    return Ok("Produto" + id + " excluído com sucesso");
 
-        }
+        //}
 
 
-        [HttpGet("GetById", Name =  "GetById")]
+        //[HttpGet("GetById", Name =  "GetById")]
 
-        public IActionResult GetById(int id)
-        {
-            var produto = _context.Produtos.Find(id);
-            if (produto == null)
-                return NotFound();
+        //public IActionResult GetById(int id)
+        //{
+        //    var produto = _context.Produtos.Find(id);
+        //    if (produto == null)
+        //        return NotFound();
 
-            var produtoDTO = new ProdutoDTO
-            {
-                Id = produto.Id,
-                Nome = produto.Nome,
-                Marca = produto.Marca,
-            };
+        //    var produtoDTO = new ProdutoDTO
+        //    {
+        //        Id = produto.Id,
+        //        Nome = produto.Nome,
+        //        Marca = produto.Marca,
+        //    };
 
-            return Ok(produto);
-        }
+        //    return Ok(produto);
+        //}
     }
 }

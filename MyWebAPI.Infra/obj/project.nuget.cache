@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sMHwZHlyl0w7I669kqZ6zsYo+EP2Mc42EOyAcWDPAXLsSF0ndNQVuOxw6uMhid5oMjoemg3fMTYWaqiD2uxllQ==",
+  "dgSpecHash": "GT3aCyBN6KOJ573kef0xj34QW2ZNv3Pz2EuXoQgd4tpL2xnmaMKbJuybpvR7jYNyieiVQpMR5+iksGrW3WcJfQ==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPI.Infra\\MyWebAPI.Infra.csproj",
+  "projectFilePath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Infra\\MyWebAPI.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iannl\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\iannl\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

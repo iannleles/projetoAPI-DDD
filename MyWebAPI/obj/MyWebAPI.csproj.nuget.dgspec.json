@@ -1,17 +1,80 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj": {}
+    "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\MyWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj": {
+    "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\MyWebAPI.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj",
-        "projectName": "MyWebAPI",
-        "projectPath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\MyWebAPI.csproj",
+        "projectUniqueName": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\MyWebAPI.Application.csproj",
+        "projectName": "MyWebAPI.Application",
+        "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\MyWebAPI.Application.csproj",
         "packagesPath": "C:\\Users\\iannl\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\DotNet\\API-DDD-Produtos\\MyWebAPIDDD\\obj\\",
+        "outputPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iannl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Infra\\MyWebAPI.Infra.csproj": {
+                "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Infra\\MyWebAPI.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Domain\\MyWebAPI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Domain\\MyWebAPI.Domain.csproj",
+        "projectName": "MyWebAPI.Domain",
+        "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Domain\\MyWebAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\iannl\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -33,6 +96,154 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Infra\\MyWebAPI.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Infra\\MyWebAPI.Infra.csproj",
+        "projectName": "MyWebAPI.Infra",
+        "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Infra\\MyWebAPI.Infra.csproj",
+        "packagesPath": "C:\\Users\\iannl\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iannl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Domain\\MyWebAPI.Domain.csproj": {
+                "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Domain\\MyWebAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\MyWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\MyWebAPI.csproj",
+        "projectName": "MyWebAPI",
+        "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\MyWebAPI.csproj",
+        "packagesPath": "C:\\Users\\iannl\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iannl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\MyWebAPI.Application.csproj": {
+                "projectPath": "C:\\Dev\\DotNet\\MyWebAPI\\projetoAPI-DDD\\MyWebAPI.Application\\MyWebAPI.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,0 +1,12 @@
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\bin\Debug\net6.0\MyWebAPI.Domain.deps.json
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\bin\Debug\net6.0\MyWebAPI.Domain.dll
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\bin\Debug\net6.0\MyWebAPI.Domain.pdb
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\MyWebAPI.Domain.csproj.AssemblyReference.cache
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\MyWebAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\MyWebAPI.Domain.AssemblyInfoInputs.cache
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\MyWebAPI.Domain.AssemblyInfo.cs
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\MyWebAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\MyWebAPI.Domain.dll
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\refint\MyWebAPI.Domain.dll
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\MyWebAPI.Domain.pdb
+C:\Dev\DotNet\MyWebAPI\projetoAPI-DDD\MyWebAPI.Domain\obj\Debug\net6.0\ref\MyWebAPI.Domain.dll
