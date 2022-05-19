@@ -12,5 +12,7 @@ namespace MyWebAPI.Infra.Repositories
         IEnumerable<Produto> GetAll();
         Produto Insert(Produto produtoDTO);
         Produto Update(Produto produtoDTO);
+        Produto GetById(int Id);
+        void Delete(Produto produto);
     }
 }

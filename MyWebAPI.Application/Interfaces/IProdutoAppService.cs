@@ -11,7 +11,9 @@ namespace MyWebAPI.Application.Interfaces
     {
         IEnumerable<ProdutoDTO> GetAll();
         ProdutoDTO Insert(ProdutoDTO produtoDTO);
-        //ProdutoDTO Update(ProdutoDTO produtoDTO);
+        ProdutoDTO Update(ProdutoDTO produtoDTO);
+        ProdutoDTO GetProdutoDTOById(int id);
+        void Delete(int id);
         
 
     }

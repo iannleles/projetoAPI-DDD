@@ -30,44 +30,30 @@ namespace MentoriaAbril.Controllers
             return Ok(produtoDTO);
         }
 
-        //[HttpPut]
-        //public IActionResult Update(ProdutoDTO produtoDTO)
-        //{
-           
-        //    return Ok(produtoDTO);
-        //}
+        [HttpPut]
+        public IActionResult Update(ProdutoDTO produtoDTO)
+        {
+
+            return Ok(_produtoAppService.Update(produtoDTO));
+        }
 
 
-        //[HttpDelete]
+        [HttpDelete]
 
-        //public IActionResult Delete(int id)
-        //{
-        //    var produto = _context.Produtos.Find(id);
-        //    if (produto == null)
-        //        return NotFound();
-        //    _context.Produtos.Remove(produto);
-        //    _context.SaveChanges();
-        //    return Ok("Produto" + id + " excluído com sucesso");
-
-        //}
+        public IActionResult Delete(int id)
+        {
+            _produtoAppService.Delete(id);
+            return Ok("Produto" + id + " excluído com sucesso");
+        }
 
 
-        //[HttpGet("GetById", Name =  "GetById")]
+        [HttpGet("GetById", Name = "GetById")]
 
-        //public IActionResult GetById(int id)
-        //{
-        //    var produto = _context.Produtos.Find(id);
-        //    if (produto == null)
-        //        return NotFound();
+        public IActionResult GetById(int id)
+        {
+            
 
-        //    var produtoDTO = new ProdutoDTO
-        //    {
-        //        Id = produto.Id,
-        //        Nome = produto.Nome,
-        //        Marca = produto.Marca,
-        //    };
-
-        //    return Ok(produto);
-        //}
+            return Ok(_produtoAppService.GetProdutoDTOById(id));
+        }
     }
 }

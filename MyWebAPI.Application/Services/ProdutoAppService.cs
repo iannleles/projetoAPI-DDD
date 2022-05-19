@@ -46,22 +46,36 @@ namespace MyWebAPI.Application.Services
             produtoDTO.Id = produto.Id;
 
             return produtoDTO;
+        }        
+
+        public ProdutoDTO GetProdutoDTOById(int Id)
+        {
+            var produto = _produtoRepository.GetById(Id);
+            
+
+            var produtoDTO = new ProdutoDTO
+            {
+                Id = produto.Id,
+                Nome = produto.Nome,
+                Marca = produto.Marca,
+            };
+
+            return produtoDTO;
         }
 
-        //public ProdutoDTO Update(ProdutoDTO produtoDTO)
-        //{
-        //    var produtoAlterado = _context.Produtos.FirstOrDefault(x => x.Id == produtoDTO.Id);
+        public ProdutoDTO Update(ProdutoDTO produtoDTO)
+        {
+            var produtoAlterado = _produtoRepository.GetById((int)produtoDTO.Id); 
+            produtoAlterado.Nome = produtoDTO.Nome;
+            produtoAlterado.Marca = produtoDTO.Marca;
+            _produtoRepository.Update(produtoAlterado);
+             return produtoDTO;
+        }
 
-        //    if (produtoAlterado == null)
-        //        return NotFound();
-
-        //    produtoAlterado.Nome = produtoDTO.Nome;
-        //    produtoAlterado.Marca = produtoDTO.Marca;
-
-
-        //    _produtoRepository.Update(produtoAlterado)
-
-            
-        //}
+        public void Delete(int id)
+        {
+            var produto = _produtoRepository.GetById(id);
+            _produtoRepository.Delete(produto);            
+        }
     }
 }

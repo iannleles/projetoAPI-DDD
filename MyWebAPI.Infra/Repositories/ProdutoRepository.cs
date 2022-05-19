@@ -22,11 +22,22 @@ namespace MyWebAPI.Infra.Repositories
             return _context.Produtos.ToList();
         }
 
+        public Produto GetById(int id)
+        {
+            return _context.Produtos.Find(id);
+        }
+
         public Produto Insert(Produto produto)
         {
             _context.Produtos.Add(produto);
             _context.SaveChanges();
             return produto;
+        }
+
+        public void Delete(Produto produto)
+        {
+            _context.Produtos.Remove(produto);
+            _context.SaveChanges();
         }
 
         public Produto Update(Produto produto)
